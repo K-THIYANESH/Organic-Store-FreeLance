@@ -1,0 +1,47 @@
+/* Placeholder pages for teammate modules. Does not style the intro or storefront. */
+.extension-shell {
+  min-height: 100vh;
+  background: var(--cream, #f7f5ed);
+  color: var(--ink, #1c2c22);
+  padding: 32px 6% 80px;
+}
+
+.extension-shell header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 28px;
+}
+
+.extension-shell h1 {
+  font-family: "Playfair Display", Georgia, serif;
+  font-size: clamp(32px, 4vw, 52px);
+  margin: 0;
+}
+
+.extension-card {
+  background: var(--paper, #fcfbf7);
+  border: 1px solid var(--line, #e5e7df);
+  border-radius: 18px;
+  padding: 22px;
+  max-width: 760px;
+}
+
+.extension-card p,
+.extension-card li {
+  color: var(--muted, #788076);
+  line-height: 1.55;
+}
+
+.extension-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 18px;
+}
+
+.extension-note {
+  margin-top: 14px;
+  font-size: 14px;
+}

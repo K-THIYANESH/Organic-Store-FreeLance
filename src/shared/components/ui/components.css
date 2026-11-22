@@ -1,0 +1,348 @@
+.search-overlay {
+  position: fixed;
+  inset: 0;
+  background: #0d241bd9;
+  z-index: 40;
+  display: grid;
+  place-items: center;
+  padding: 20px
+}
+
+.search-overlay[hidden] {
+  display: none
+}
+
+.search-box {
+  width: min(600px, 100%);
+  background: var(--paper);
+  padding: 50px;
+  position: relative
+}
+
+.search-box input {
+  width: 100%;
+  padding: 15px;
+  border: 0;
+  border-bottom: 1px solid #b6c3ad;
+  background: transparent;
+  font: 22px "Playfair Display";
+  outline: 0;
+  margin: 10px 0 25px
+}
+
+.close-btn {
+  border: 0;
+  background: transparent;
+  font-size: 28px;
+  color: var(--forest)
+}
+
+.search-box .close-btn {
+  position: absolute;
+  right: 20px;
+  top: 15px
+}
+
+.cart-drawer {
+  position: fixed;
+  z-index: 52;
+  right: 0;
+  top: 0;
+  height: 100vh;
+  width: min(450px, 100%);
+  background: var(--paper);
+  transform: translateX(105%);
+  transition: .35s;
+  display: flex;
+  flex-direction: column;
+  padding: 30px
+}
+
+.cart-drawer.open {
+  transform: none
+}
+
+.drawer-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid var(--line);
+  padding-bottom: 20px
+}
+
+.drawer-head .eyebrow {
+  margin-bottom: 7px
+}
+
+.drawer-head h2 {
+  font: 29px "Playfair Display";
+  color: var(--forest);
+  margin: 0
+}
+
+.cart-items {
+  overflow: auto;
+  flex: 1;
+  padding: 15px 0
+}
+
+.cart-empty {
+  font-size: 15px;
+  color: #818a7e;
+  text-align: center;
+  margin-top: 80px
+}
+
+.cart-row {
+  display: grid;
+  grid-template-columns: 70px 1fr auto;
+  gap: 13px;
+  padding: 14px 0;
+  border-bottom: 1px solid var(--line)
+}
+
+.cart-row img {
+  width: 70px;
+  height: 75px;
+  object-fit: cover
+}
+
+.cart-row h4 {
+  font: 16px "Playfair Display";
+  margin: 3px 0 7px;
+  color: var(--forest)
+}
+
+.cart-row small {
+  font-size: 13px;
+  color: #7f887b
+}
+
+.qty {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 10px
+}
+
+.qty button {
+  width: 22px;
+  height: 22px;
+  border: 1px solid var(--line);
+  background: white;
+  color: var(--forest)
+}
+
+.cart-row>strong {
+  font-size: 14px
+}
+
+.cart-foot {
+  border-top: 1px solid var(--line);
+  padding-top: 18px
+}
+
+.subtotal {
+  display: flex;
+  justify-content: space-between;
+  font-size: 15px;
+  margin-bottom: 10px
+}
+
+.subtotal b {
+  font-size: 16px;
+  color: var(--forest)
+}
+
+.cart-foot small {
+  font-size: 12.5px;
+  color: #899184
+}
+
+.cart-foot .primary-btn {
+  width: 100%;
+  margin-top: 17px
+}
+
+.scrim {
+  position: fixed;
+  inset: 0;
+  background: #071a11a6;
+  z-index: 50;
+  opacity: 0;
+  visibility: hidden;
+  transition: .3s
+}
+
+.scrim.show {
+  opacity: 1;
+  visibility: visible
+}
+
+.modal {
+  position: fixed;
+  inset: 0;
+  z-index: 60;
+  background: #071a11b8;
+  display: none;
+  place-items: center;
+  padding: 20px;
+  overflow: auto
+}
+
+.modal.show {
+  display: grid
+}
+
+.modal-card {
+  background: var(--paper);
+  width: min(520px, 100%);
+  padding: 40px;
+  position: relative;
+  max-height: 92vh;
+  overflow: auto
+}
+
+.modal-close {
+  position: absolute;
+  right: 17px;
+  top: 12px
+}
+
+.modal-card h2 {
+  font: 38px/1.1 "Playfair Display";
+  color: var(--forest);
+  margin: 0 0 22px
+}
+
+.modal-card form .primary-btn {
+  width: 100%;
+  margin-top: 12px
+}
+
+.modal-card textarea {
+  resize: vertical
+}
+
+.required-note {
+  display: block;
+  color: #9b7650;
+  font-weight: 400;
+  margin-top: 4px
+}
+
+.payment-choice {
+  padding: 15px;
+  background: #f0f2e9;
+  margin-top: 10px;
+  font-size: 13px
+}
+
+.payment-choice label {
+  display: block;
+  margin-top: 10px
+}
+
+.payment-choice small {
+  display: block;
+  color: #8a9387;
+  margin-top: 8px
+}
+
+.order-confirm {
+  text-align: center
+}
+
+.success-mark {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: #e1ead7;
+  color: var(--forest);
+  display: grid;
+  place-items: center;
+  font-size: 23px;
+  margin: 0 auto 18px
+}
+
+.order-confirm>p:not(.eyebrow) {
+  font-size: 14px;
+  line-height: 1.8;
+  color: #778174
+}
+
+.order-id {
+  background: #f0f2e9;
+  padding: 12px;
+  font-size: 14px;
+  letter-spacing: 1px;
+  margin: 20px 0
+}
+
+.porter-placeholder {
+  display: flex;
+  gap: 13px;
+  text-align: left;
+  background: #f5f3e9;
+  padding: 17px;
+  margin: 15px 0 22px
+}
+
+.porter-icon {
+  width: 34px;
+  height: 34px;
+  background: #e1e8d7;
+  color: var(--forest);
+  display: grid;
+  place-items: center;
+  border-radius: 50%
+}
+
+.porter-placeholder b {
+  font-size: 14px;
+  color: var(--forest)
+}
+
+.porter-placeholder p {
+  font-size: 12.5px;
+  line-height: 1.6;
+  color: #788174;
+  margin: 6px 0
+}
+
+.status-pill {
+  font-size: 10px;
+  letter-spacing: 1px;
+  color: #8b6c32;
+  background: #f1e6c9;
+  padding: 5px 7px
+}
+
+.order-confirm .primary-btn {
+  width: 100%
+}
+
+.toast {
+  position: fixed;
+  bottom: 25px;
+  left: 50%;
+  transform: translate(-50%, 20px);
+  background: var(--forest);
+  color: white;
+  padding: 13px 20px;
+  font-size: 14px;
+  z-index: 80;
+  opacity: 0;
+  pointer-events: none;
+  transition: .25s
+}
+
+.toast.show {
+  opacity: 1;
+  transform: translate(-50%, 0)
+}
+
+[hidden] {
+  display: none !important
+}
+

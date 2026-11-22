@@ -1,0 +1,490 @@
+/* ============================================================
+   PREMIUM FOOTER & NEWSLETTER — CLEAN CARDS & PURE WHITE TEXT
+   ============================================================ */
+.site-footer {
+  background: #143525;
+  /* Premium Deep Botanical Forest */
+  color: #ffffff;
+  position: relative;
+  font-size: 15px;
+  line-height: 1.6;
+  margin-top: 50px;
+}
+
+/* 1. Green Pill Newsletter Banner */
+.newsletter-wrap {
+  padding: 0 6%;
+  transform: translateY(-38px);
+  margin-bottom: -18px;
+  position: relative;
+  z-index: 5;
+}
+
+.newsletter-banner {
+  background: #77a713;
+  border-radius: 999px;
+  padding: 16px 36px 16px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 25px;
+  box-shadow: 0 14px 32px rgba(0, 0, 0, 0.28);
+  position: relative;
+  overflow: visible;
+}
+
+.newsletter-decor-left {
+  position: relative;
+  width: 140px;
+  height: 90px;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  pointer-events: none;
+}
+
+.newsletter-decor-img {
+  position: absolute;
+  left: -35px;
+  bottom: -28px;
+  width: 230px;
+  height: auto;
+  max-width: none;
+  filter: drop-shadow(0 14px 22px rgba(0, 0, 0, 0.4));
+  transform: rotate(-3deg);
+  transition: transform 0.3s ease;
+}
+
+.newsletter-banner:hover .newsletter-decor-img {
+  transform: rotate(0deg) scale(1.05);
+}
+
+.newsletter-content {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  color: #ffffff;
+}
+
+.newsletter-icon {
+  width: 44px;
+  height: 44px;
+  background: rgba(255, 255, 255, 0.22);
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  font-size: 20px;
+  flex-shrink: 0;
+}
+
+.newsletter-text h3 {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 19px;
+  font-weight: 700;
+  margin: 0 0 2px;
+  color: #ffffff;
+  letter-spacing: -0.2px;
+}
+
+.newsletter-text p {
+  margin: 0;
+  font-size: 14px;
+  color: #ffffff;
+  opacity: 0.95;
+}
+
+.newsletter-form {
+  display: flex;
+  align-items: center;
+  background: #ffffff;
+  border-radius: 999px;
+  padding: 4px 5px 4px 20px;
+  width: min(440px, 100%);
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.12);
+  flex-shrink: 0;
+}
+
+.newsletter-form input {
+  border: 0;
+  background: transparent;
+  outline: 0;
+  font-size: 14.5px;
+  color: #222222;
+  flex: 1;
+  min-width: 0;
+  padding: 8px 0;
+}
+
+.newsletter-form input::placeholder {
+  color: #888888;
+}
+
+.newsletter-form button {
+  background: #77a713;
+  color: #ffffff;
+  border: 0;
+  border-radius: 999px;
+  padding: 10px 24px;
+  font-size: 14px;
+  font-weight: 700;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+
+.newsletter-form button:hover {
+  background: #5d830f;
+  transform: translateX(2px);
+}
+
+/* 2. Main Footer 4-Column Layout with Matching Boxed Cards */
+.footer-body {
+  padding: 30px 6% 36px;
+  display: grid;
+  grid-template-columns: 1.35fr 0.85fr 1.3fr 1.15fr;
+  gap: 24px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+/* Boxed card style around content for ALL sections in footer */
+.footer-col {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-card {
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  border-radius: 12px;
+  padding: 24px 22px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.18);
+  transition: transform 0.25s ease, border-color 0.25s ease;
+}
+
+.footer-card:hover {
+  border-color: rgba(149, 209, 39, 0.45);
+  transform: translateY(-2px);
+}
+
+.footer-card .col-title {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  color: #ffffff;
+  margin: 0 0 16px;
+  letter-spacing: -0.2px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+  padding-bottom: 10px;
+}
+
+/* Brand Card */
+.footer-logo {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 12px;
+}
+
+.logo-leaf {
+  font-size: 26px;
+}
+
+.logo-text {
+  font-family: 'Playfair Display', serif;
+  font-size: 25px;
+  font-weight: 700;
+  color: #ffffff;
+  line-height: 1;
+  letter-spacing: -0.8px;
+}
+
+.logo-text small {
+  display: block;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 9px;
+  letter-spacing: 2px;
+  line-height: 1;
+  color: #9fe225;
+  font-weight: 700;
+  margin-top: 3px;
+}
+
+.footer-desc {
+  font-size: 14px;
+  line-height: 1.7;
+  color: #ffffff;
+  opacity: 0.95;
+  margin: 0 0 18px;
+  flex-grow: 1;
+}
+
+.footer-social-strip {
+  display: flex;
+  gap: 8px;
+  margin-top: auto;
+}
+
+.footer-social-strip a {
+  width: 34px;
+  height: 34px;
+  background: rgba(255, 255, 255, 0.12);
+  border: 1px solid rgba(255, 255, 255, 0.22);
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  color: #ffffff;
+  font-size: 13px;
+  transition: all 0.25s ease;
+}
+
+.footer-social-strip a:hover {
+  background: #77a713;
+  color: #ffffff;
+  border-color: #77a713;
+  transform: translateY(-2px);
+}
+
+/* Links Card */
+.col-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.col-list a {
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 500;
+  transition: color 0.2s, transform 0.2s;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.col-list a::before {
+  content: "›";
+  font-size: 16px;
+  color: #9fe225;
+  font-weight: bold;
+}
+
+.col-list a:hover {
+  color: #9fe225;
+  transform: translateX(4px);
+}
+
+/* Official Info Card */
+.info-block {
+  display: flex;
+  flex-direction: column;
+  gap: 13px;
+}
+
+.info-item {
+  display: flex;
+  gap: 10px;
+  align-items: flex-start;
+}
+
+.info-icon {
+  font-size: 16px;
+  margin-top: 2px;
+}
+
+.info-item b {
+  display: block;
+  font-size: 14px;
+  color: #ffffff;
+  margin-bottom: 2px;
+}
+
+.info-item p {
+  margin: 0;
+  font-size: 13.5px;
+  line-height: 1.55;
+  color: #ffffff;
+  opacity: 0.92;
+}
+
+.info-item a {
+  display: block;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 500;
+  transition: color 0.2s;
+  text-decoration: none;
+}
+
+.info-item a.map-link {
+  color: inherit;
+}
+
+.info-item a.map-link:hover b {
+  color: #9fe225;
+}
+
+.view-map-btn {
+  display: inline-block;
+  margin-top: 6px;
+  font-size: 12px;
+  font-weight: 600;
+  color: #9fe225;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  transition: color 0.2s, transform 0.2s;
+}
+
+.info-item a.map-link:hover .view-map-btn {
+  color: #bbf443;
+}
+
+.info-item a.alt-phone {
+  margin-top: 2px;
+}
+
+.info-item a:hover {
+  color: #9fe225;
+}
+
+/* Dedicated Open Hours Card */
+.hours-card {
+  background: transparent;
+  padding: 0;
+  box-shadow: none;
+  border: 0;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.hours-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 0;
+  border-bottom: 1px dashed rgba(255, 255, 255, 0.16);
+  font-size: 14px;
+}
+
+.hours-row:last-of-type {
+  border-bottom: 0;
+}
+
+.hours-row .day {
+  color: #ffffff;
+  opacity: 0.95;
+  font-weight: 500;
+}
+
+.hours-row .time {
+  color: #9fe225;
+  font-weight: 700;
+}
+
+.hours-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: rgba(159, 226, 37, 0.18);
+  color: #bbf45a;
+  border: 1px solid rgba(159, 226, 37, 0.35);
+  padding: 5px 12px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.6px;
+  margin-top: 14px;
+  align-self: flex-start;
+}
+
+.dot-online {
+  color: #9fe225;
+  font-size: 12px;
+  animation: pulseDot 2s infinite ease-in-out;
+}
+
+@keyframes pulseDot {
+
+  0%,
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+
+  50% {
+    opacity: 0.4;
+    transform: scale(0.85);
+  }
+}
+
+.hours-note {
+  margin: 12px 0 0;
+  font-size: 13.5px;
+  line-height: 1.5;
+  color: #ffffff;
+  opacity: 0.88;
+}
+
+/* 3. Bottom Copyright & Trust Bar */
+.footer-bar {
+  background: #0d251a;
+  padding: 16px 6%;
+}
+
+.footer-bar-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 14px;
+}
+
+.copyright {
+  margin: 0;
+  font-size: 14px;
+  color: #ffffff;
+  opacity: 0.9;
+}
+
+.copyright b {
+  color: #9fe225;
+}
+
+.payment-trust {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.badge-pay {
+  background: rgba(255, 255, 255, 0.12);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  border-radius: 4px;
+  padding: 4px 10px;
+  font-size: 11.5px;
+  font-weight: 700;
+  color: #ffffff;
+  letter-spacing: 0.5px;
+}
+
+.back-to-top {
+  font-size: 13px;
+  font-weight: 700;
+  color: #ffffff;
+  transition: color 0.2s, transform 0.2s;
+  display: inline-block;
+}
+
+.back-to-top:hover {
+  color: #9fe225;
+  transform: translateY(-2px);
+}
