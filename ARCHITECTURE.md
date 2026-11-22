@@ -55,12 +55,12 @@ Point Razorpay's webhook at `https://<your-domain>/api/checkout/verify-webhook`.
 
 ```bash
 npm run dev        # http://127.0.0.1:3000  (/login, /checkout, /admin rewrite like Vercel)
-npm run build      # syntax check, secret scan, server price check
+npm run build      # checks scripts and server pricing, then creates dist/ for deployment
 ```
 
 ## Deploy checklist
 
-1. Import the repo on Vercel. Framework preset: Other. Build command: `npm run build`. Do not set an output directory; the site and `/api` functions ship from the project root.
+1. Import the repo on Vercel. Framework preset: Other. Build command: `npm run build`. Set the output directory to `dist`; Vercel serves the static site there and deploys the `/api` functions from the project root.
 2. Add the environment variables above. Do not mark the secret keys as exposed to the browser.
 3. Confirm `/`, `/login`, `/home`, `/checkout`, and `/admin` load without a 404 on refresh.
 4. `/assets/*` is cached as immutable. Replace an image by using a new filename.

@@ -2,7 +2,7 @@
 
 Premium organic e-commerce frontend for **GoOrganic Store — Anna Nagar, Chennai**.
 
-Vanilla HTML5 / CSS3 / JavaScript. Intro + auth on `index.html`; full post-login shopping SPA on `home.html`. `npm run build` type-checks the scripts and the server price book.
+Vanilla HTML5 / CSS3 / JavaScript. Intro + auth on `index.html`; full post-login shopping SPA on `home.html`. `npm run build` checks the scripts and server price book, then prepares the deployable static site in `dist/`.
 
 ---
 
